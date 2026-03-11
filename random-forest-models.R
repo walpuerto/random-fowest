@@ -58,8 +58,13 @@ modelList <- trainList %>%
 
 
 # Print the importance of every variable in every disease
-modelList %>% 
+modelList %>% print()
   map("importance") %>% 
+  print()
+
+  
+# Print the accuracy and variance of Each model
+modelList %>% 
   print()
 
 
